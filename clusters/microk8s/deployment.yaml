@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: react-app
-        image: zilcherry100/react-app:a3d960f855f2acd866f2f4590cfb32adf0ad5a23
+        image: zilcherry100/react-app:a0e0cb4cbf0adc2841731b91c4971c0e7aefe2d6
         ports:
         - containerPort: 80
