@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: react-app-service
+  namespace: react-app
+spec:
+  type: NodePort  # Or LoadBalancer if using cloud; NodePort for MicroK8s
+  selector:
+    app: react-app
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 30080  # Access via http://<microk8s-ip>:30080
